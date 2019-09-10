@@ -2,7 +2,7 @@ var nodemailer=require('nodemailer');
 module.exports={
     sendEmail: (to,subject,message) => {
     var mailOption ={
-        from:'sih.dipp@gmail.com',
+        from:'dodrairob@gmail.com',
         to: to,
         subject : subject,
         text: message
@@ -10,8 +10,8 @@ module.exports={
     var transport=nodemailer.createTransport({
         service:'gmail',
         auth: {
-            user: "sih.dipp@gmail.com",
-            pass: "sih@2019"
+            user: "dodrairob@gmail.com",
+            pass: "8252501319"
         }
     });
     transport.sendMail(mailOption,function (err,info){
